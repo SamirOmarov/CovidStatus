@@ -1,8 +1,14 @@
 <template>
   <div>
-
     <h2 class="mb-5 Title">World Status</h2>
     <!-- <p>{{ info }}</p> -->
+
+
+    <!-- <div v-for="country in info" :key="country.name">
+      <p>{{ country.name }}</p>
+    </div> -->
+
+
     <div class="vx-row">
       <div class="vx-col w-full sm:w-1/2 md:w-1/2 lg:w-1/4 xl:w-1/4">
         <statistics-card-line
@@ -54,27 +60,22 @@
 import StatisticsCardLine from "@/components/statistics-cards/StatisticsCardLine.vue";
 import axios from "axios";
 
-
-
 export default {
-  
-  data () {
+  data() {
     return {
       info: []
-    }
+    };
   },
-  mounted () {
+  mounted() {
     axios
-      .get('https://api.coindesk.com/v1/bpi/currentprice.json')
-      .then(response => (this.info = response.data))
+      .get("https://restcountries.eu/rest/v2/all", {})
+      .then(response => (this.info = response.data));
   },
 
   components: {
     StatisticsCardLine
   }
 };
-
-
 </script>
 
 <style>

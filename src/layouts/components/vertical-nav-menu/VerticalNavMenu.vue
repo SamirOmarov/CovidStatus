@@ -67,6 +67,7 @@
             <!-- Group Header -->
             <span v-if="item.header && !verticalNavMenuItemsMin" class="navigation-header truncate" :key="`header-${index}`">
               {{ item.header }}
+             
             </span>
             <!-- /Group Header -->
 

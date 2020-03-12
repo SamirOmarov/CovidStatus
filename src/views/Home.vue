@@ -5,6 +5,9 @@
 
 <template>
   <div >
+      <WorldData />
+
+    <h2 class="mb-5 Title">Country Status</h2>
     
     <div class="vx-row">
             <div class="vx-col w-1/2 md:w-1/3 xl:w-1/6">
@@ -79,7 +82,6 @@
           
         </vx-card>
       </div>
-      <WorldData />
   </div>
 </template>
 
@@ -104,3 +106,13 @@ export default{
 }
 
 </script>
+
+<style>
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+
+.Title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 36px;
+  letter-spacing: 10px;
+}
+</style> 
