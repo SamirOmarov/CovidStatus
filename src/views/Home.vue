@@ -53,7 +53,7 @@
                   class="mb-base"
                   icon="InfoIcon"
                   statistic="689"
-                  statisticTitle="Infected"
+                  statisticTitle="Total Infected"
                   color='warning' />
             </div>
 
@@ -64,7 +64,7 @@
                   icon="AlertCircleIcon"
                   statistic="2"
                   statisticTitle="Serious"
-                  color='warning' />
+                  color='#'/>
             </div>
         </div>
         
@@ -79,7 +79,7 @@
           
         </vx-card>
       </div>
-  
+      <WorldData />
   </div>
 </template>
 
@@ -87,6 +87,7 @@
 import StatisticsCardLine from '@/components/statistics-cards/StatisticsCardLine.vue'
 import VueApexCharts from "vue-apexcharts";
 import apexChatData from "./apexChartData.js";
+import WorldData from '@/components/WorldData.vue'
 
 export default{
     data() {
@@ -96,7 +97,8 @@ export default{
   },
     components: {
         StatisticsCardLine,
-        VueApexCharts
+        VueApexCharts,
+        WorldData
     },
 
 }

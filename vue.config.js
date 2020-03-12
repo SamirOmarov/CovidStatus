@@ -17,6 +17,9 @@ module.exports = {
         chunks: 'all'
       }
     }
-  }
+  },
+//   devServer: {
+//     proxy: 'https://corona.lmao.ninja/',
+// }
 }
 
