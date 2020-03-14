@@ -1,11 +1,7 @@
 <template>
   <div>
     <div class="mt-4">
-      <h5 class="mb-2">Theme Mode</h5>
-      <div>
-        <vs-radio v-model="themeMode" vs-value="light" class="mr-4" vs-name="theme-mode-light">Light</vs-radio>
-        <vs-radio v-model="themeMode" vs-value="dark" class="mr-4" vs-name="theme-mode-dark">Dark</vs-radio>
-      </div>
+      <!-- <h5 class="mb-2">Theme Mode</h5> -->
     </div>
 
     <h2 class="mb-5 title">World Status</h2>
@@ -119,16 +115,7 @@ export default {
       .get("https://restcountries.eu/rest/v2/all", {})
       .then(response => (this.info = response.data));
   },
-  computed: {
-    themeMode: {
-      get() {
-        return this.$store.state.theme;
-      },
-      set(val) {
-        this.$store.dispatch("updateTheme", val);
-      }
-    }
-  }
+
 };
 </script>
 
