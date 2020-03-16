@@ -2,11 +2,7 @@
   File Name: TheNavbar.vue
   Description: Navbar component
   Component Name: TheNavbar
-  ----------------------------------------------------------------------------------------
-  Item Name: Vuexy - Vuejs, HTML & Laravel Admin Dashboard Template
-  Author: Pixinvent
-  Author URL: http://www.themeforest.net/user/pixinvent
-========================================================================================== -->
+============================= -->
 
 
 <template>
@@ -27,14 +23,19 @@
         <!-- <bookmarks :navbarColor="navbarColor" v-if="windowWidth >= 992" /> -->
 
         <vs-spacer />
+        <i18n />
+
+
+        
+
         <div>
           <vs-radio
             v-model="themeMode"
             vs-value="light"
-            class="mr-4"
+            class="mr-4 ml-4 mt-2"
             vs-name="theme-mode-light"
-          >Light</vs-radio>
-          <vs-radio v-model="themeMode" vs-value="dark" class="mr-4" vs-name="theme-mode-dark">Dark</vs-radio>
+          ><featherIcon icon="SunIcon"/></vs-radio>
+          <vs-radio v-model="themeMode" vs-value="dark" class="mt-2 mr-4" vs-name="theme-mode-dark"><featherIcon icon="MoonIcon"/></vs-radio>
         </div>
       </vs-navbar>
     </div>
@@ -47,6 +48,9 @@
 // import SearchBar            from "./components/SearchBar.vue"
 // import NotificationDropDown from "./components/NotificationDropDown.vue"
 // import ProfileDropDown      from "./components/ProfileDropDown.vue"
+import I18n from "./components/I18n.vue";
+import featherIcon from "@/components/FeatherIcon.vue";
+
 
 export default {
   name: "the-navbar-vertical",
@@ -61,6 +65,8 @@ export default {
     // SearchBar,
     // NotificationDropDown,
     // ProfileDropDown,
+    I18n,
+    featherIcon
   },
   computed: {
     themeMode: {

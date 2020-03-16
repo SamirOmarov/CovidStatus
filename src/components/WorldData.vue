@@ -4,8 +4,9 @@
       <!-- <h5 class="mb-2">Theme Mode</h5> -->
     </div>
 
-    <h2 class="mb-5 title">World Status</h2>
-    <!-- <p>{{ info }}</p> -->
+    <h2 class="mb-5 title">{{ $t("WorldStatus") }}</h2>
+
+    <!-- <p>{{ mapData }}</p> -->
 
     <!-- <div v-for="country in info" :key="country.name">
       <p>{{ country.name }}</p>
@@ -17,8 +18,8 @@
           hideChart
           class="mb-base"
           icon="EyeIcon"
-          statistic="129583"
-          statisticTitle="Total Infected"
+          :statistic="info.confirmed"
+          :statisticTitle="$t('TotalInfected')"
         />
       </div>
 
@@ -27,8 +28,8 @@
           hideChart
           class="mb-base"
           icon="SmileIcon"
-          statisticTitle="Recovered"
-          statistic="68667"
+          :statisticTitle="$t('Recovered')"
+          :statistic="info.cured"
           color="success"
         />
       </div>
@@ -38,8 +39,8 @@
           hideChart
           class="mb-base"
           icon="XIcon"
-          statistic="4749"
-          statisticTitle="Deaths"
+          :statistic="info.death"
+          :statisticTitle="$t('Deaths')"
           color="warning"
         />
       </div>
@@ -49,28 +50,34 @@
           hideChart
           class="mb-base"
           icon="PercentIcon"
-          statistic="3.6%"
-          statisticTitle="Lethality"
+          :statistic="info.death/info.confirmed*100"
+          :statisticTitle="$t('Lethality')"
           color="danger"
         />
       </div>
     </div>
 
-    <!-- <WorldMap :countydata="MapData"></WorldMap> -->
-
-
     <GChart
       type="GeoChart"
+      v-if="themeMode=='dark'"
       :settings="{packages: ['geochart'], mapsApiKey: myMapsApiKey}"
       :data="mapData"
       :options="mapOptionsDark"
     />
-
+    <GChart
+      type="GeoChart"
+      v-if="themeMode=='light'"
+      :settings="{packages: ['geochart'], mapsApiKey: myMapsApiKey}"
+      :data="mapData"
+      :options="mapOptionLight"
+    />
   </div>
 </template>
 
 <script>
 import StatisticsCardLine from "@/components/statistics-cards/StatisticsCardLine.vue";
+import I18n from "@/components/I18n.vue";
+
 import axios from "axios";
 // import WorldMap from "vue-world-map";
 // import MapData from "./MapData.js"
@@ -81,41 +88,70 @@ var myMapsApiKey = ""; // API key from Google
 export default {
   components: {
     StatisticsCardLine,
-    GChart
+    GChart,
+    I18n
     // WorldMap
   },
   data() {
     return {
       info: [],
-      mapData: [
-        ["Country", "Infected"],
-        ["Germany", 2200],
-        ["United States", 300],
-        ["Brazil", 400],
-        ["Canada", 500],
-        ["France", 600],
-        ["China", 88600],
-        ["Azerbaijan", 11],
-        ["Turkey", 1],
-        ["Russia", 700]
-      ],
+      map: [],
+      ip: [],
+
+      mapData: [["Country", "Confirmed"]],
       mapOptionsDark: {
         colorAxis: { colors: ["#e31b23", "#cc191e", "#b5161b", "#710e11"] },
-        backgroundColor: '#262c49',
+        backgroundColor: "#262c49"
       },
       mapOptionLight: {
-        colorAxis: { colors: ["#e31b23", "#cc191e", "#b5161b", "#710e11"] },
-        
+        colorAxis: { colors: ["#e31b23", "#cc191e", "#b5161b", "#710e11"] }
       },
-      myMapsApiKey: myMapsApiKey
+      myMapsApiKey: myMapsApiKey,
+      locale: this.$i18n.locale
     };
   },
-  mounted() {
-    axios
-      .get("https://restcountries.eu/rest/v2/all", {})
-      .then(response => (this.info = response.data));
+  watch: {
+    locale(val) {
+      this.$i18n.locale = val;
+    }
   },
+  created() {
+    let self = this;
+    axios
+      .get("http://api.covidstatus.com/cases/all", {})
+      .then(response => (this.info = response.data));
 
+  
+
+    this.ip = fetch("https://ipapi.co/json/")
+
+
+    // axios
+    //   .get("https://ipapi.co/json/")
+    //   .then(response => {
+    //     let data = response.data;
+    //     this.ip = data;
+    //     console.log(data);
+    //   })
+    //   .catch(error => {
+    //     console.log(error);
+    //   });
+
+    axios.get("http://api.covidstatus.com/cases", {}).then(response => {
+      this.map = response.data;
+      response.data.forEach(element => {
+        if (element.confirmed != 0)
+          self.mapData.push([element.country_name, element.confirmed]);
+      });
+    });
+  },
+  computed: {
+    themeMode: {
+      get() {
+        return this.$store.state.theme;
+      }
+    }
+  }
 };
 </script>
 

@@ -3,25 +3,25 @@
     <h2 class="title mt-5 mb-10">COVID-19 STATUS</h2>
     <div class="vx-row">
       <div class="vx-col md:w-1/2 w-full mb-base">
-        <vx-card title="Seriousness of symptoms">
+        <vx-card :title="$t('Symptoms')">
           <symptoms />
         </vx-card>
       </div>
 
       <div class="vx-col md:w-1/2 w-full mb-base">
-        <vx-card title="Worldwide percentage status">
+        <vx-card :title="$t('WorldWidePercentage')">
           <percentage />
         </vx-card>
       </div>
 
       <div class="vx-col md:w-1/2 w-full mb-base">
-        <vx-card title="Risk groups by age">
+        <vx-card :title="$t('RiskGroup')">
           <risk />
         </vx-card>
       </div>
 
       <div class="vx-col md:w-1/2 w-full mb-base">
-        <vx-card title="Preconditions">
+        <vx-card :title="$t('Preconditions')">
           <illness />
         </vx-card>
       </div>

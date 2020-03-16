@@ -50,10 +50,14 @@ import store from './store/store'
 import { VueHammer } from 'vue2-hammer'
 Vue.use(VueHammer)
 
+// i18n
+import i18n from './i18n/i18n'
 
 // PrismJS
 import 'prismjs'
 import 'prismjs/themes/prism-tomorrow.css'
+
+
 
 
 // Feather font icon
@@ -65,5 +69,6 @@ Vue.config.productionTip = false
 new Vue({
     router,
     store,
+    i18n,
     render: h => h(App)
 }).$mount('#app')
