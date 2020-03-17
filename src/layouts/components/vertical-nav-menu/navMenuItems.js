@@ -8,7 +8,6 @@
 
 
 //
-
 export default [
   {
     url: "/",
@@ -17,42 +16,49 @@ export default [
     icon: "HomeIcon",
   },
   {
-    url: "/page2",
-    name: "Outbreak charts",
-    slug: "page2",
-    icon: "FileIcon",
+    url: "/Countries",
+    name: "CountriesData",
+    slug: "Countries",
+    icon: "GlobeIcon",
   },
   {
-    url: "/page3",
-    name: "World News",
-    slug: "page3",
-    icon: "FileIcon",
+    url: "/charts",
+    name: "OutbreakCharts",
+    slug: "charts",
+    icon: "BarChart2Icon",
   },
+  // {
+  //   url: "/page3",
+  //   name: "WorldNews",
+  //   slug: "page3",
+  //   icon: "CompassIcon",
+  // },
   {
-    url: "/page4",
-    name: "Protection and safety",
-    slug: "page4",
-    icon: "FileIcon",
-  },{
-    url: "/page4",
-    name: "For Nerds",
-    slug: "page4",
-    icon: "FileIcon",
-  },{
-    url: "/page4",
-    name: "Wiki",
-    slug: "page4",
-    icon: "FileIcon",
-  },{
-    url: "/s",
-    name: "Quick Fact",
-    slug: "page4",
-    icon: "FileIcon",
+    url: "/protection",
+    name: "Protection",
+    slug: "protection",
+    icon: "CheckSquareIcon",
   },
+  // {
+  //   url: "/page4",
+  //   name: "ForNerds",
+  //   slug: "page4",
+  //   icon: "DatabaseIcon",
+  // },{
+  //   url: "/page4",
+  //   name: "Wiki",
+  //   slug: "page4",
+  //   icon: "FileIcon",
+  // },{
+  //   url: "/s",
+  //   name: "QuickFacts",
+  //   slug: "page4",
+  //   icon: "FileIcon",
+  // },
   {
-    url: "/page4",
-    name: "World Map",
-    slug: "page4",
-    icon: "FileIcon",
+    url: "/map",
+    name: "WorldMap",
+    slug: "map",
+    icon: "MapIcon",
   },
 ]

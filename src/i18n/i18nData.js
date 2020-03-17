@@ -140,12 +140,38 @@ export default {
 		Active: 'Active Cases',
 		Serious: 'Serious',
 		LineChart: 'Line Area Chart of Covid-19',
-		Symptoms: 'Seriousness of symptoms',
+		Symptoms: 'Seriousness of symptoms %',
 		WorldWidePercentage: 'Worldwide percentage status',
 		RiskGroup: 'Risk groups by age',
 		Preconditions: 'Risk groups by Preconditions',
 
+		Countries: 'Countries and territories',
+		YourCountry: 'Your Region:',
 
+		//NavBarVertical data:
+		Home: 'Home',
+		CountriesData: 'Countries Data',
+		OutbreakCharts: 'Pandemic charts',
+		WorldNews: 'World News',
+		Protection: 'Protection and Safety',
+		ForNerds: 'For Nerds',
+		Wiki: 'Wikipedia',
+		QuickFacts: 'Quick Facts',
+		WorldMap: 'Wolrd Map',
+
+		Mild: 'Mild',
+		Severe: 'Severe',
+		Critical: 'Critical',
+
+		Cardiovascular: 'Cardiovascular disease',
+		Diabetes: 'Diabetes',
+		Chronic: 'Chronic Respiratory Disease',
+		Blood: 'High Blood Pressure',
+		Cancer: 'Cancer',
+		NoIllness: 'No pre conditions',
+
+
+		
 
 
 	},
@@ -550,29 +576,123 @@ export default {
 		Active: 'Aktif Vakalar',
 		Serious: 'Kritik koşullar',
 		LineChart: 'Covid-19 Alan Çizelgesi',
-		Symptoms: 'Semptomların ciddiyeti',
+		Symptoms: 'Semptomların ciddiyeti %',
 		WorldWidePercentage: 'Dünya genelinde yüzde durumu',
 		RiskGroup: 'Yaşa göre risk grupları',
 		Preconditions: 'Ön koşullara göre risk grupları',
+		Countries: 'Ülkeler ve bölgeler',
+		YourCountry: 'Bulunduğunuz Bölge:',
+
+
+		//navbar
+		Home: 'Ana menü',
+		CountriesData: 'Ülke Verileri',
+		OutbreakCharts: 'Pandemi çizelgeleri',
+		WorldNews: 'Dünya Haberleri',
+		Protection: 'Koruma ve Güvenlik',
+		ForNerds: 'Meraklıları için',
+		Wiki: 'Wikipedi',
+		QuickFacts: 'Kısa Bilgiler',
+		WorldMap: 'Dünya haritası',
+
+		Mild: 'Hafif',
+		Severe: 'şiddetli',
+		Critical: 'kritik',
+
+		Cardiovascular: 'Kalp-damar hastalığı',
+		Diabetes: 'Diyabet',
+		Chronic: 'Kronik Solunum Hastalıkları',
+		Blood: 'Yüksek tansiyon',
+		Cancer: 'Kanser',
+		NoIllness: 'Ön koşul yok',
+		
 	},
 	az:{
 		demoTitle: 'Deneme',
 		demoText: 'Azerice Test',
-
+		YourCountry: 'Bölgəniz:',
 
 		TotalInfected: 'Təsdiqlənmiş xəstə sayı',
 		Recovered: 'Sağalanlar',
-		Deaths: 'Ölümlər',
+		Deaths: 'Ölənlərin sayı',
 		Lethality: 'Ölüm faizi',
 		WorldStatus: 'Dünya Statusu',
 		Status: 'Status',
 		Active: 'Aktiv xəstələr',
 		Serious: 'Kritik vəziyyət',
 		LineChart: 'Covid-19 Sahə Qrafiki',
-		Symptoms: 'Semptomların şiddəti',
+		Symptoms: 'Semptomların şiddəti %',
 		WorldWidePercentage: 'Dünyadakı faiz statusu',
 		RiskGroup: 'Yaş üzrə risk qrupları',
 		Preconditions: 'Ön şərtlərə görə risk qrupları',
+		Countries: 'Ölkələr və ərazilər',
+
+		//navbar
+		Home: 'Ana menu',
+		CountriesData: 'Ölkə məlumatları',
+		OutbreakCharts: 'Pandemiya qrafikləri',
+		WorldNews: 'Dünya Xəbərləri',
+		Protection: 'Mühafizə və təhlükəsizlik',
+		ForNerds: 'Həvəskarlar üçün',
+		Wiki: 'Wikipedia',
+		QuickFacts: 'Qısa məlumatlar',
+		WorldMap: 'Dünya xəritəsi',
+
+
+		
+		Mild: 'yüngül',
+		Severe: 'şiddətli',
+		Critical: 'kritik',
+		
+		Cardiovascular: 'Ürək-damar xəstəliyi',
+		Diabetes: 'Diabet',
+		Chronic: 'Xroniki tənəffüs xəstəlikləri',
+		Blood: 'Yüksək qan təzyiqi',
+		Cancer: 'Xərçəng',
+		NoIllness: 'Ön şərtlər yoxdur',
+	},
+
+	ru:{
+
+		YourCountry: 'Ваш регион:',
+
+		TotalInfected: 'Всего заражено',
+		Recovered: 'Выздоровело',
+		Deaths: 'Умерло',
+		Lethality: 'летальность',
+		WorldStatus: 'Мировой статус',
+		Status: 'статус',
+		Active: 'Заражений',
+		Serious: 'в тяжёлом состоянии',
+		LineChart: 'Covid-19 Sahə Qrafiki',
+		Symptoms: 'Серьезность симптомов %',
+		WorldWidePercentage: 'Мировой процент',
+		RiskGroup: 'Группы риска по возрасту',
+		Preconditions: 'Группы риска по предварительным условиям',
+		Countries: 'Страны и территории',
+
+		//navbar
+		Home: 'Главное меню',
+		CountriesData: 'Информация о стран',
+		OutbreakCharts: 'Диаграммы пандемии',
+		WorldNews: 'Новости Мира',
+		Protection: 'Защита и безопасность',
+		ForNerds: 'Для любителей',
+		Wiki: 'Wikipedia',
+		QuickFacts: 'Краткая информация',
+		WorldMap: 'Карта мира',
+
+		Mild: 'умеренный',
+		Severe: 'тяжелый',
+		Critical: 'критический',
+
+		Cardiovascular: 'Сердечно-сосудистые заболевания',
+		Diabetes: 'Диабет',
+		Chronic: 'Хроническая респираторная болезнь',
+		Blood: 'Высокое кровяное давление',
+		Cancer: 'рак',
+		NoIllness: 'Без предварительных условий',
+		
+	},
 	}
 
-}

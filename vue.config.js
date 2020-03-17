@@ -19,7 +19,7 @@ module.exports = {
     }
   },
 //   devServer: {
-//     proxy: 'https://corona.lmao.ninja/',
+//     proxy: 'https://ipapi.co/',
 // }
 }
 

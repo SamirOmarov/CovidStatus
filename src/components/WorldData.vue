@@ -7,6 +7,7 @@
     <h2 class="mb-5 title">{{ $t("WorldStatus") }}</h2>
 
     <!-- <p>{{ mapData }}</p> -->
+    <!-- <p>{{ ip.country_code }}</p> -->
 
     <!-- <div v-for="country in info" :key="country.name">
       <p>{{ country.name }}</p>
@@ -50,7 +51,7 @@
           hideChart
           class="mb-base"
           icon="PercentIcon"
-          :statistic="info.death/info.confirmed*100"
+          :statistic="(info.death/info.confirmed*100).toFixed(2)"
           :statisticTitle="$t('Lethality')"
           color="danger"
         />
@@ -94,13 +95,18 @@ export default {
   },
   data() {
     return {
-      info: [],
+      info: {
+        confirmed: 0,
+        cured: 0,
+        death: 0,
+        serious: 0
+      },
       map: [],
       ip: [],
 
       mapData: [["Country", "Confirmed"]],
       mapOptionsDark: {
-        colorAxis: { colors: ["#e31b23", "#cc191e", "#b5161b", "#710e11"] },
+        colorAxis: { colors: ["#ec5f64","#e9484e", "#e63138","#e31b23", "#cc191e", "#b5161b","#b5161b","#b5161b","#b5161b","#b5161b","#b5161b","#b5161b", "#710e11" , "#710e11", "#710e11", "#710e11"] },
         backgroundColor: "#262c49"
       },
       mapOptionLight: {
@@ -117,25 +123,10 @@ export default {
   },
   created() {
     let self = this;
+
     axios
       .get("http://api.covidstatus.com/cases/all", {})
       .then(response => (this.info = response.data));
-
-  
-
-    this.ip = fetch("https://ipapi.co/json/")
-
-
-    // axios
-    //   .get("https://ipapi.co/json/")
-    //   .then(response => {
-    //     let data = response.data;
-    //     this.ip = data;
-    //     console.log(data);
-    //   })
-    //   .catch(error => {
-    //     console.log(error);
-    //   });
 
     axios.get("http://api.covidstatus.com/cases", {}).then(response => {
       this.map = response.data;

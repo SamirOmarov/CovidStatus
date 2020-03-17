@@ -13,6 +13,11 @@ export default {
       default: null
     }
   },
+  watch: {
+  chartData () {
+    this.$data._chart.update()
+  }
+},
   mounted () {
     this.renderChart(this.chartdata, this.options)
   }
