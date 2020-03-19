@@ -55,10 +55,10 @@ export default [
   //   slug: "page4",
   //   icon: "FileIcon",
   // },
-  {
-    url: "/map",
-    name: "WorldMap",
-    slug: "map",
-    icon: "MapIcon",
-  },
+  // {
+  //   url: "https://en.wikipedia.org/wiki/2019–20_coronavirus_pandemic",
+  //   name: "Wiki",
+  //   slug: "Wiki",
+  //   icon: "MapIcon",
+  // },
 ]
