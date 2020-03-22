@@ -8,6 +8,8 @@
         <vs-th sort-key="confirmed">{{$t('TotalInfected')}}</vs-th>
         <vs-th sort-key="death">{{$t('Deaths')}}</vs-th>
         <vs-th sort-key="cured">{{$t('Recovered')}}</vs-th>
+        <vs-th >{{$t('Lethality')}}</vs-th>
+
       </template>
 
       <template slot-scope="{data}">
@@ -16,6 +18,7 @@
           <vs-td :data="data[indextr].confirmed">{{data[indextr].confirmed}}</vs-td>
           <vs-td :data="data[indextr].death">{{data[indextr].death}}</vs-td>
           <vs-td :data="data[indextr].cured">{{data[indextr].cured}}</vs-td>
+          <vs-td :data="(data[indextr].death/data[indextr].confirmed*100).toFixed(2)">{{(data[indextr].death/data[indextr].confirmed*100).toFixed(2) + ' %'}}</vs-td>
         </vs-tr>
       </template>
     </vs-table>

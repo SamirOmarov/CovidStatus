@@ -72,6 +72,8 @@
       :data="mapData"
       :options="mapOptionLight"
     />
+
+    {{ <p> </p>}}
   </div>
 </template>
 
@@ -119,10 +121,13 @@ export default {
   watch: {
     locale(val) {
       this.$i18n.locale = val;
-    }
+      
+    },
   },
   created() {
     let self = this;
+
+    
 
     axios
       .get("http://api.covidstatus.com/cases/all", {})
@@ -135,6 +140,15 @@ export default {
           self.mapData.push([element.country_name, element.confirmed]);
       });
     });
+
+        
+
+  },
+
+  mounted(){
+   let self =this ;
+   setInterval(function(){ console.log(self.$i18n.locale) }, 3000);
+  //  console.log(self.$i18n.locale)
   },
   computed: {
     themeMode: {

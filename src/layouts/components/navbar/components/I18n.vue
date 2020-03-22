@@ -15,7 +15,7 @@
         <img class="h-4 w-5 mr-1" src="@/assets/images/flags/de.png" alt="de" /> &nbsp;German
       </vs-dropdown-item>
       <vs-dropdown-item @click="updateLocale('ru')">
-        <img class="h-4 w-5 mr-1" src="@/assets/images/flags/ru.png" alt="ru" /> &nbsp;Русский 
+        <img class="h-4 w-5 mr-1" src="@/assets/images/flags/ru.png" alt="ru" /> &nbsp;Русский
       </vs-dropdown-item>
       <vs-dropdown-item @click="updateLocale('tr')">
         <img class="h-4 w-5 mr-1" src="@/assets/images/flags/tr.png" alt="tr" /> &nbsp;Türkçe
@@ -39,7 +39,8 @@ export default {
     i18n_locale_img() {
       return require(`@/assets/images/flags/${this.$i18n.locale}.png`);
     },
-    getCurrentLocaleData() {
+     getCurrentLocaleData() {
+
       const locale = this.$i18n.locale;
 
       if (locale == "en") return { flag: "us", lang: "English" };
@@ -55,7 +56,9 @@ export default {
       this.$i18n.locale = locale;
     },
     async getData() {
-      const getIpResponse = await axios.get("http://api.covidstatus.com/info_about_country");
+      const getIpResponse = await axios.get(
+        "http://api.covidstatus.com/info_about_country"
+      );
       this.ip = getIpResponse.data;
       // console.log(this.ip);
     }
