@@ -10,6 +10,7 @@
 
 import Vue from 'vue'
 import App from './App.vue'
+import VueAnalytics from 'vue-analytics';
 
 // Vuesax Component Framework
 import Vuesax from 'vuesax'
@@ -65,6 +66,13 @@ require('./assets/css/iconfont.css')
 
 
 Vue.config.productionTip = false
+
+// Configuration VueAnalytics
+Vue.use(VueAnalytics, {
+  id: 'UA-161430051-1',
+  router
+});
+
 
 new Vue({
     router,
