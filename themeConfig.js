@@ -33,6 +33,9 @@ const themeConfig = {
   // NOTE: themeTour will be disabled in screens < 1200. Please refer docs for more info.
 }
 
+
+
+
 import Vue from 'vue'
 import Vuesax from 'vuesax'
 Vue.use(Vuesax, { theme:{ colors }, rtl: themeConfig.rtl })

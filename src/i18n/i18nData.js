@@ -303,6 +303,51 @@ export default {
 		RaiseSupport: 'Unterstützung erheben',
 		demoTitle: 'Kartentitel',
 		demoText: 'Kuchen Sesam Schnaps Cupcake Lebkuchen Dänisch Ich liebe Lebkuchen. Apfelkuchen-Torte-Jujuben chupa chups muffin halvah Lutscher. Schokoladenkuchenhaferkuchen Tiramisu-Marzipanzuckerpflaume. Donut süße Kuchen Hafer Kuchen Dragée Obstkuchen Zuckerwatte Zitrone Tropfen.',
+	
+		
+
+
+		//Start here
+
+		TotalInfected: 'Insgesamt Infizierte',
+		Recovered: 'Geheilt',
+		Deaths: 'Todesfälle',
+		Lethality: 'Letalität',
+		WorldStatus: 'Status der Welt',
+		Status: 'Status',
+		Active: 'Aktive Fälle',
+		Serious: 'Schwerwiegende',
+		LineChart: 'Linien-Flächendiagramme von Covid-19',
+		Symptoms: 'Ernsthaftigkeit der Symptome %',
+		WorldWidePercentage: 'Weltweiter Prozentsatz',
+		RiskGroup: 'Risikogruppe nach Alter',
+		Preconditions: 'Risikogruppe von Vorbedingungen',
+		
+		Countries: 'Ländern und Gebieten',
+		YourCountry: 'Ihre Region:',
+
+		//NavBarVertical data:
+		Home: 'Hauptmenü',
+		CountriesData: 'Länderdaten',
+		OutbreakCharts: 'Pandemie Diagramme',
+		WorldNews: 'Weltweite Nachrichten',
+		Protection: 'Schutz und Sicherheit',
+		ForNerds: 'Für Streber',
+		Wiki: 'Wikipedia',
+		QuickFacts: 'Schnelle Fakten',
+		WorldMap: 'Weltkarte',
+
+		Mild: 'Mild',
+		Severe: 'Schwere',
+		Critical: 'Kritisch',
+
+		Cardiovascular: 'Herz-Kreislauf Erkrankungen',
+		Diabetes: 'Diabetes',
+		Chronic: 'Chronische Atemwegserkrankungen ',
+		Blood: 'Hoher Blutdruck',
+		Cancer: 'Krebs',
+		NoIllness: 'Keine Vorbedingungen',
+
 	},
 	fr: {
 		Dashboard: 'Tableau de bord',
