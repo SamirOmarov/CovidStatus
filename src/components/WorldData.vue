@@ -34,6 +34,7 @@
           color="success"
         />
       </div>
+      
 
       <div class="vx-col w-full sm:w-1/2 md:w-1/2 lg:w-1/4 xl:w-1/4">
         <statistics-card-line
@@ -146,8 +147,8 @@ export default {
   },
 
   mounted(){
-   let self =this ;
-   setInterval(function(){ console.log(self.$i18n.locale) }, 3000);
+  //  let self =this ;
+  //  setInterval(function(){ console.log(self.$i18n.locale) }, 3000);
   //  console.log(self.$i18n.locale)
   },
   computed: {
