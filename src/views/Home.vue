@@ -6,9 +6,8 @@
 <template>
   <div>
 
+    <a class="Kofi" href='https://ko-fi.com/A0A21J5UF' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://az743702.vo.msecnd.net/cdn/kofi5.png?v=2' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
     <h2 class="mt-5 mb-5 title">{{ $t('YourCountry')}}  {{ ip.name}}</h2>
-    <!-- <p>{{ ip.country_code }}</p> -->
-    <!-- <p>{{ info}}</p> -->
 
     <div class="vx-row">
       <div class="vx-col w-1/2 md:w-1/3 xl:w-1/6">
@@ -99,6 +98,8 @@ import WorldData from "@/components/WorldData.vue";
 
 import axios from "axios";
 
+
+
 export default {
   data() {
     return {
@@ -137,4 +138,8 @@ export default {
 };
 </script>
 
-
+<style scoped>
+.Kofi{
+  float: right;
+}
+</style>

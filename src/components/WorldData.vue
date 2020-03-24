@@ -73,8 +73,6 @@
       :data="mapData"
       :options="mapOptionLight"
     />
-
-    {{ <p> </p>}}
   </div>
 </template>
 

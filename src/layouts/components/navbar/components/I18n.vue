@@ -39,8 +39,7 @@ export default {
     i18n_locale_img() {
       return require(`@/assets/images/flags/${this.$i18n.locale}.png`);
     },
-     getCurrentLocaleData() {
-
+    getCurrentLocaleData() {
       const locale = this.$i18n.locale;
 
       if (locale == "en") return { flag: "us", lang: "English" };
@@ -64,8 +63,12 @@ export default {
     }
   },
   async mounted() {
+    let availableLocales = ["en", "ru", "de", "tr", "az"];
     await this.getData();
-    this.updateLocale(this.ip.code.toLowerCase());
+    
+    if (availableLocales.includes(this.ip.code.toLowerCase())) {
+      this.updateLocale(this.ip.code.toLowerCase());
+    }
   }
 };
 </script>
