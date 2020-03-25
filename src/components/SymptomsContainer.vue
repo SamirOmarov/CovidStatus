@@ -31,7 +31,7 @@ export default {
     }
   }),
   created(){
-    this.chartdata.labels=[this.$t('Mild'), this.$t('Severe'),this.$t('Severe'),]
+    this.chartdata.labels=[this.$t('Mild'), this.$t('Severe'),this.$t('Critical'),]
   }
 
 
