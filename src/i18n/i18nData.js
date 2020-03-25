@@ -41,6 +41,11 @@ export default {
     Cancer: 'Cancer',
     NoIllness: 'No pre conditions',
 
+
+    ProtectionTitle: 'How to Protect Yourself and Others',
+    SymptomsTitle: 'Symptoms',
+
+
     Spreads: 'How COVID-19  Spreads',
     ProtectYourself: 'Take steps to protect yourself',
     ProtectOthers: 'Take steps to protect others',
@@ -174,6 +179,8 @@ export default {
 
 
 
+    ProtectionTitle: 'Kendinizi ve Başkalarını Nasıl Korursunuz',
+    SymptomsTitle: 'Belirtiler',
 
     Spreads: 'COVID-19 (Yeni Koronavirüs Hastalığı) Nasıl Bulaşır?',
     ProtectYourself: 'Kendinizi korumak için adımlar atın',
@@ -258,6 +265,8 @@ export default {
     Cancer: 'Xərçəng',
     NoIllness: 'Ön şərtlər yoxdur',
 
+    ProtectionTitle: 'Özünüzü və başqalarını necə qorumalısınız',
+    SymptomsTitle: 'Simptomlar',
 
     
     Spreads: 'COVID-19 necə ötürülür?',

@@ -73,6 +73,8 @@
       :data="mapData"
       :options="mapOptionLight"
     />
+
+    <h4 class="mt-4 data">Sources: WHO, CDC, ECDC, NHC, DXY, Reuters </h4>
   </div>
 </template>
 
@@ -86,6 +88,8 @@ import axios from "axios";
 import { GChart } from "vue-google-charts";
 
 var myMapsApiKey = ""; // API key from Google
+
+
 
 export default {
   components: {

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2 class="title mb-4">How to Protect Yourself and Others</h2>
+    <h2 class="title mb-4">{{ $t("ProtectionTitle")}}</h2>
     <div class="vx-row">
       <div class="vx-col w-full xl:w-1/2">
         <vx-card :title="$t('Spreads')" class="mb-base">
@@ -169,7 +169,7 @@
       </div>
     </div>
 
-    <h2 class="title mb-4">Symptoms</h2>
+    <h2 class="title mb-4">{{ $t("SymptomsTitle")}}</h2>
 
     <div class="flex flex-wrap mb-10">
       <div class="w-1/4 ml-auto">
