@@ -21,12 +21,10 @@
         />
 
         <!-- <bookmarks :navbarColor="navbarColor" v-if="windowWidth >= 992" /> -->
+        <img class="logoid sm:inline-flex xl:hidden cursor-pointer p-2" src="@/assets/images/logo/logoCovid.png" alt="ru" />
 
         <vs-spacer />
         <i18n />
-
-
-        
 
         <div>
           <vs-radio
@@ -34,8 +32,12 @@
             vs-value="light"
             class="mr-4 ml-4 mt-2"
             vs-name="theme-mode-light"
-          ><featherIcon icon="SunIcon"/></vs-radio>
-          <vs-radio v-model="themeMode" vs-value="dark" class="mt-2 mr-4" vs-name="theme-mode-dark"><featherIcon icon="MoonIcon"/></vs-radio>
+          >
+            <featherIcon icon="SunIcon" />
+          </vs-radio>
+          <vs-radio v-model="themeMode" vs-value="dark" class="mt-2 mr-4" vs-name="theme-mode-dark">
+            <featherIcon icon="MoonIcon" />
+          </vs-radio>
         </div>
       </vs-navbar>
     </div>
@@ -50,7 +52,6 @@
 // import ProfileDropDown      from "./components/ProfileDropDown.vue"
 import I18n from "./components/I18n.vue";
 import featherIcon from "@/components/FeatherIcon.vue";
-
 
 export default {
   name: "the-navbar-vertical",
@@ -112,3 +113,8 @@ export default {
 };
 </script>
 
+<style scoped>
+.logoid{
+  max-width: 55px;
+}
+</style>
