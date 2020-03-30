@@ -31,7 +31,9 @@ body {
 }
 
 .vx-logo {
-  .vx-logo-text{
+  margin-bottom: -8px;
+
+  .vx-logo-text {
     font-size: 22px;
     font-weight: 600;
     animation: 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) 0s normal forwards 1 fadein;
@@ -157,7 +159,7 @@ div[id$="demo"] {
   justify-content: flex-start;
   align-items: center;
 
-  &>* {
+  & > * {
     margin-right: 1.5rem;
     margin-top: 1.5rem;
   }

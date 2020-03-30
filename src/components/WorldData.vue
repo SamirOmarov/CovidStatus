@@ -14,7 +14,7 @@
     </div>-->
 
     <div class="vx-row">
-      <div class="vx-col w-full sm:w-1/2 md:w-1/2 lg:w-1/6 xl:w-1/6">
+      <div class="vx-col w-full vx-col w-1/2 md:w-1/3 xl:w-1/6">
         <statistics-card-line
           hideChart
           class="mb-base"
@@ -25,7 +25,7 @@
       </div>
 
 
-      <div class="vx-col w-full sm:w-1/2 md:w-1/2 lg:w-1/6 xl:w-1/6">
+      <div class="vx-col w-full vx-col w-1/2 md:w-1/3 xl:w-1/6">
         <statistics-card-line
           hideChart
           class="mb-base"
@@ -36,7 +36,7 @@
         />
       </div>
 
-      <div class="vx-col w-full sm:w-1/2 md:w-1/2 lg:w-1/6 xl:w-1/6">
+      <div class="vx-col w-full vx-col w-1/2 md:w-1/3 xl:w-1/6">
         <statistics-card-line
           hideChart
           class="mb-base"
@@ -47,7 +47,7 @@
       </div>
 
 
-      <div class="vx-col w-full sm:w-1/2 md:w-1/2 lg:w-1/6 xl:w-1/6">
+      <div class="vx-col w-full vx-col w-1/2 md:w-1/3 xl:w-1/6">
         <statistics-card-line
           hideChart
           class="mb-base"
@@ -58,7 +58,7 @@
         />
       </div>
 
-      <div class="vx-col w-full sm:w-1/2 md:w-1/2 lg:w-1/6 xl:w-1/6">
+      <div class="vx-col w-full vx-col w-1/2 md:w-1/3 xl:w-1/6">
         <statistics-card-line
           hideChart
           class="mb-base"
@@ -68,7 +68,7 @@
           color="success"
         />
       </div>
-      <div class="vx-col w-full sm:w-1/2 md:w-1/2 lg:w-1/6 xl:w-1/6">
+      <div class="vx-col w-full vx-col w-1/2 md:w-1/3 xl:w-1/6">
         <statistics-card-line
           hideChart
           class="mb-base"
