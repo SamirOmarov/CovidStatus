@@ -9,6 +9,8 @@ export default {
     WorldStatus: 'World Status',
     Status: 'Status',
     Active: 'Active Cases',
+    NewCases: "New Infected",
+    NewDeath: "New Deaths",
     Serious: 'Serious',
     LineChart: 'Line Area Chart of Covid-19',
     Symptoms: 'Seriousness of symptoms %',
@@ -56,7 +58,6 @@ export default {
     CoverTitle: 'Cover coughs and sneezes',
 
 
-
     Transmission: 'Through respiratory droplets produced when an infected person coughs or sneezes.',
     Transmission2: 'Between people who are in close contact with one another (within about 6 feet or 2 meters).',
     Wash: 'Wash your hands often with soap and water for at least 20 seconds especially after you have been in a public place, or after blowing your nose, coughing, or sneezing.',
@@ -99,6 +100,8 @@ export default {
     WorldStatus: 'Status der Welt',
     Status: 'Status',
     Active: 'Aktive Fälle',
+    NewCases: "Neu bestätigt",
+    NewDeath: "Neue Todesfälle",
     Serious: 'Schwerwiegende',
     LineChart: 'Linien-Flächendiagramme von Covid-19',
     Symptoms: 'Ernsthaftigkeit der Symptome %',
@@ -145,6 +148,8 @@ export default {
     WorldStatus: 'Dünya Durumu',
     Status: 'Durum',
     Active: 'Aktif Vakalar',
+    NewCases: "Yeni Vaka",
+    NewDeath: "Yeni Ölümler",
     Serious: 'Kritik koşullar',
     LineChart: 'Covid-19 Alan Çizelgesi',
     Symptoms: 'Semptomların ciddiyeti %',
@@ -178,7 +183,6 @@ export default {
     NoIllness: 'Ön koşul yok',
 
 
-
     ProtectionTitle: 'Kendinizi ve Başkalarını Nasıl Korursunuz',
     SymptomsTitle: 'Belirtiler',
 
@@ -190,7 +194,6 @@ export default {
     Avoid: 'Yakın temastan kaçının',
     Stay: 'Hastaysan evde kal',
     CoverTitle: 'Cover coughs and sneezes',
-
 
 
     Transmission: 'Hasta bireylerin öksürmeleri aksırmaları ile ortama saçılan damlacıkların solunması ile bulaşır.',
@@ -213,7 +216,7 @@ export default {
     Mask2: 'Tıbbi maske kullanım sırasında kirlenir, nemlenir veya yırtılır ise mutlaka yenisiyle değiştirilmelidir',
 
     Clean: 'Clean AND disinfect frequently touched surfaces daily. This includes tables, doorknobs, light switches, countertops, handles, desks, phones, keyboards, toilets, faucets, and sinks.',
-    
+
     emergency: 'COVID-19 için acil uyarı işaretleri geliştirirseniz derhal  en yakın sağlık kuruluşuna başvurun :',
     breath: 'Nefes darlığı',
     chest: 'Göğüste kalıcı ağrı veya baskı',
@@ -233,6 +236,8 @@ export default {
     WorldStatus: 'Dünya Statusu',
     Status: 'Status',
     Active: 'Aktiv xəstələr',
+    NewCases: "Yeni xəstə sayı",
+    NewDeath: "Yeni ölümlər",
     Serious: 'Kritik vəziyyət',
     LineChart: 'Covid-19 Sahə Qrafiki',
     Symptoms: 'Semptomların şiddəti %',
@@ -253,7 +258,6 @@ export default {
     WorldMap: 'Dünya xəritəsi',
 
 
-
     Mild: 'yüngül',
     Severe: 'şiddətli',
     Critical: 'kritik',
@@ -268,7 +272,7 @@ export default {
     ProtectionTitle: 'Özünüzü və başqalarını necə qorumalısınız',
     SymptomsTitle: 'Simptomlar',
 
-    
+
     Spreads: 'COVID-19 necə ötürülür?',
     ProtectYourself: 'Özünüzü xəstələnməkdən qoruyun',
     ProtectOthers: 'Başqalarını xəstələnmədən qoruyun',
@@ -298,7 +302,7 @@ export default {
     Mask2: 'Şəxsi əşyaları, məsələn, qab-qacaq, dəsmal və yataq dəstlərini evinizdəki insanlarla bölüşməkdən çəkinin.',
 
     Clean: 'Clean AND disinfect frequently touched surfaces daily. This includes tables, doorknobs, light switches, countertops, handles, desks, phones, keyboards, toilets, faucets, and sinks.',
-    
+
     emergency: 'COVID-19-a məruz qaldıqlarını düşünən insanlar dərhal təcili tibbi yardım (103 və ya 113)  xidməti ilə əlaqə saxlamalıdırlar:',
     breath: 'təngənəfəslik',
     chest: 'döş qəfəsinin tıxanması hissi',
@@ -317,6 +321,8 @@ export default {
     WorldStatus: 'Мировой статус',
     Status: 'статус',
     Active: 'Заражений',
+    NewCases: "Новые подтвержденные",
+    NewDeath: "Новые смерти",
     Serious: 'в тяжёлом состоянии',
     LineChart: 'Covid-19 Sahə Qrafiki',
     Symptoms: 'Серьезность симптомов %',
