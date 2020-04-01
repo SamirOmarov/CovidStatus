@@ -67,3 +67,4 @@ WHO, CDC, ECDC, NHC, DXY, Reuters
 MIT
 
 © [Samir Omarov](http://samiromarov.com/#/)
+ [Seymur Omarov](http://seymuromarov.com/)
