@@ -3,7 +3,6 @@
   <br>
   <a href="http://covidstatus.com/"><img src="demo/Covidlogo.png" width="400"></a>
   <br>
-  CovidStatus
   <br>
 </h1>
 
