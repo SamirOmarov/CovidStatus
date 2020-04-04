@@ -32,7 +32,7 @@ export default {
     };
   },
   created() {
-    axios.get("http://api.covidstatus.com/cases", {}).then(response => {
+    axios.get("https://api.covidstatus.com/cases", {}).then(response => {
       this.countries = response.data;
     });
   }

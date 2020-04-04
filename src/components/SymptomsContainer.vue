@@ -39,7 +39,7 @@ export default {
   //   this.loaded = false;
   //   try {
   //     const { datalist } = await fetch(
-  //       "http://api.covidstatus.com/symptoms_statistics"
+  //       "https://api.covidstatus.com/symptoms_statistics"
   //     );
   //     this.chartdata = datalist;
   //     console.log(this.chartdata);

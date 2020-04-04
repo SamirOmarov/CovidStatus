@@ -39,7 +39,7 @@ export default {
     };
   },
   mounted() {
-    axios.get("http://api.covidstatus.com/cases", {}).then(response => {
+    axios.get("https://api.covidstatus.com/cases", {}).then(response => {
       this.countries = response.data;
       this.countries.sort((b,a) => (a.confirmed > b.confirmed) ? 1 : ((b.confirmed > a.confirmed) ? -1 : 0));
 

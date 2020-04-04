@@ -152,14 +152,14 @@
       // console.log(this.ip);
       // console.log(this.ip.country_code);
 
-      let url = "http://api.covidstatus.com/cases/" + this.ip.code;
+      let url = "https://api.covidstatus.com/cases/" + this.ip.code;
       // console.log(url);
       axios.get(url, {}).then(response => (this.info = response.data));
     },
 
     methods: {
       async getData() {
-        const getIpResponse = await axios.get("http://api.covidstatus.com/info_about_country");
+        const getIpResponse = await axios.get("https://api.covidstatus.com/info_about_country");
         this.ip = getIpResponse.data;
         // console.log(this.ip);
       }

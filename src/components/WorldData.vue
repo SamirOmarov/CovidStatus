@@ -95,7 +95,7 @@
       :options="mapOptionLight"
     />
 
-    <h4 class="mt-4 data">Sources: WHO, CDC, ECDC, NHC, DXY, Reuters</h4>
+    <h4 class="mt-4 data">Sources: WHO, CDC, ECDC, NHC, DXY, JHU CSSE, Reuters</h4>
   </div>
 </template>
 
@@ -142,7 +142,7 @@
         mapOptionLight: {
           colorAxis: {colors: ["#e31b23", "#cc191e", "#b5161b", "#710e11"]}
         },
-        myMapsApiKey: myMapsApiKey,
+        myMapsApiKey: "",
         locale: this.$i18n.locale
       };
     },
@@ -155,10 +155,10 @@
       let self = this;
 
       axios
-        .get("http://api.covidstatus.com/cases/all", {})
+        .get("https://api.covidstatus.com/cases/all", {})
         .then(response => (this.info = response.data));
 
-      axios.get("http://api.covidstatus.com/cases", {}).then(response => {
+      axios.get("https://api.covidstatus.com/cases", {}).then(response => {
         this.map = response.data;
         response.data.forEach(element => {
           if (element.confirmed != 0)

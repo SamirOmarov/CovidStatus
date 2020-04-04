@@ -56,7 +56,7 @@
       },
       async getData() {
         const getIpResponse = await axios.get(
-          "http://api.covidstatus.com/info_about_country"
+          "https://api.covidstatus.com/info_about_country"
         );
         this.ip = getIpResponse.data;
         // console.log(this.ip);
