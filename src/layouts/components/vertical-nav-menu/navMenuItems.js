@@ -16,17 +16,23 @@ export default [
     icon: "HomeIcon",
   },
   {
-    url: "/Countries",
-    name: "CountriesData",
-    slug: "Countries",
-    icon: "GlobeIcon",
-  },
-  {
     url: "/charts",
     name: "OutbreakCharts",
     slug: "charts",
     icon: "BarChart2Icon",
   },
+  {
+    url: "/Countries",
+    name: "CountriesData",
+    slug: "Countries",
+    icon: "GlobeIcon",
+  },
+  // {
+  //   url: "/timelines",
+  //   name: "TimelinePage",
+  //   slug: "timelines",
+  //   icon: "ActivityIcon",
+  // },
   // {
   //   url: "/page3",
   //   name: "WorldNews",

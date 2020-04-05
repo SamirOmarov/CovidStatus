@@ -86,6 +86,7 @@ const mutations = {
   TOGGLE_CONTENT_OVERLAY(state, val) { state.bodyOverlay       = val },
   UPDATE_PRIMARY_COLOR(state, val)   { state.themePrimaryColor = val },
   UPDATE_THEME(state, val)           { state.theme             = val },
+  UPDATE_COUNTRY(state, val)           { state.country             = val },
   UPDATE_WINDOW_WIDTH(state, width)  { state.windowWidth       = width },
   UPDATE_WINDOW_SCROLL_Y(state, val) { state.scrollY = val },
 

@@ -36,8 +36,13 @@ const router = new Router({
               {
                 path: '/charts',
                 name: 'charts',
-                component: () => import('./views/Page2.vue')
+                component: () => import('./views/Charts.vue')
               },
+              // {
+              //   path: '/timelines',
+              //   name: 'timelines',
+              //   component: () => import('./views/Charts.vue')
+              // },
               {
                 path: '/countries',
                 name: 'countries',

@@ -3,6 +3,7 @@ export default {
   en: {
 
     TotalInfected: 'Total Infected',
+    TotalInfectedByDay: 'Total Infected By Day',
     Recovered: 'Recovered',
     Deaths: 'Deaths',
     Lethality: 'Lethality',
@@ -23,6 +24,7 @@ export default {
 
     //NavBarVertical data:
     Home: 'Home',
+    TimelinePage: 'Growth charts',
     CountriesData: 'Countries Data',
     OutbreakCharts: 'Pandemic charts',
     WorldNews: 'World News',
@@ -85,7 +87,7 @@ export default {
     chest: 'Persistent pain or pressure in the chest',
     confusion: 'New confusion or inability to arouse',
     lips: 'Bluish lips or face',
-
+    selectCountriesToCompare: "Select countries to compare"
 
   },
   de: {
@@ -94,6 +96,7 @@ export default {
     //Start here
 
     TotalInfected: 'Insgesamt Infizierte',
+    TotalInfectedByDay: 'Insgesamt am Tag infiziert',
     Recovered: 'Geheilt',
     Deaths: 'Todesfälle',
     Lethality: 'Letalität',
@@ -114,6 +117,7 @@ export default {
 
     //NavBarVertical data:
     Home: 'Hauptmenü',
+    TimelinePage: 'Wachstumsplan',
     CountriesData: 'Länderdaten',
     OutbreakCharts: 'Pandemie Diagramme',
     WorldNews: 'Weltweite Nachrichten',
@@ -133,7 +137,7 @@ export default {
     Blood: 'Hoher Blutdruck',
     Cancer: 'Krebs',
     NoIllness: 'Keine Vorbedingungen',
-
+    selectCountriesToCompare: "Länder zum Vergleichen auswählen"
   },
   fr: {},
   tr: {
@@ -142,6 +146,7 @@ export default {
 
 
     TotalInfected: 'Doğrulanan Vaka',
+    TotalInfectedByDay: 'Güne Göre Doğrulanan Vaka',
     Recovered: 'İyileşen',
     Deaths: 'Ölümler',
     Lethality: 'Ölüm Oranı',
@@ -162,6 +167,7 @@ export default {
 
     //navbar
     Home: 'Ana menü',
+    TimelinePage: 'Büyüme çizelgeleri',
     CountriesData: 'Ülke Verileri',
     OutbreakCharts: 'Pandemi çizelgeleri',
     WorldNews: 'Dünya Haberleri',
@@ -222,14 +228,15 @@ export default {
     chest: 'Göğüste kalıcı ağrı veya baskı',
     confusion: 'zatürre',
     lips: 'Mavimsi dudaklar veya yüz',
-
+    selectCountriesToCompare: "Karşılaştırılacak ülkeleri seçin"
   },
   az: {
     demoTitle: 'Deneme',
     demoText: 'Azerice Test',
     YourCountry: 'Bölgəniz:',
 
-    TotalInfected: 'Təsdiqlənmiş xəstə sayı',
+    TotalInfected: 'Ümumi təsdiqlənmiş xəstə sayı',
+    TotalInfectedByDay: 'Gündəlik təsdiqlənmiş xəstə sayı',
     Recovered: 'Sağalanlar',
     Deaths: 'Ölənlərin sayı',
     Lethality: 'Ölüm faizi',
@@ -248,6 +255,7 @@ export default {
 
     //navbar
     Home: 'Ana menu',
+    TimelinePage: 'Artım qrafiki',
     CountriesData: 'Ölkə məlumatları',
     OutbreakCharts: 'Pandemiya qrafikləri',
     WorldNews: 'Dünya Xəbərləri',
@@ -308,6 +316,7 @@ export default {
     chest: 'döş qəfəsinin tıxanması hissi',
     confusion: 'mialgiya və yorğunluq',
     lips: 'bədən hərarətinin yüksəlməsi',
+    selectCountriesToCompare: 'Müqayisə etmək üçün ölkələri seçin'
   },
 
   ru: {
@@ -315,6 +324,7 @@ export default {
     YourCountry: 'Ваш регион:',
 
     TotalInfected: 'Всего заражено',
+    TotalInfectedByDay: 'Всего заражено за день',
     Recovered: 'Выздоровело',
     Deaths: 'Умерло',
     Lethality: 'летальность',
@@ -333,6 +343,7 @@ export default {
 
     //navbar
     Home: 'Главное меню',
+    TimelinePage: 'Диаграммы роста',
     CountriesData: 'Информация о стран',
     OutbreakCharts: 'Диаграммы пандемии',
     WorldNews: 'Новости Мира',
@@ -352,6 +363,6 @@ export default {
     Blood: 'Высокое кровяное давление',
     Cancer: 'рак',
     NoIllness: 'Без предварительных условий',
-
+    selectCountriesToCompare: 'Выберите страны для сравнения'
   },
 }
