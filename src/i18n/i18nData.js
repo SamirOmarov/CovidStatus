@@ -87,7 +87,8 @@ export default {
     chest: 'Persistent pain or pressure in the chest',
     confusion: 'New confusion or inability to arouse',
     lips: 'Bluish lips or face',
-    selectCountriesToCompare: "Select countries to compare"
+    selectCountriesToCompare: "Select countries to compare",
+    predict: "Predict"
 
   },
   de: {
@@ -137,7 +138,9 @@ export default {
     Blood: 'Hoher Blutdruck',
     Cancer: 'Krebs',
     NoIllness: 'Keine Vorbedingungen',
-    selectCountriesToCompare: "Länder zum Vergleichen auswählen"
+    selectCountriesToCompare: "Länder zum Vergleichen auswählen",
+    predict: "Predict"
+
   },
   fr: {},
   tr: {
@@ -228,7 +231,9 @@ export default {
     chest: 'Göğüste kalıcı ağrı veya baskı',
     confusion: 'zatürre',
     lips: 'Mavimsi dudaklar veya yüz',
-    selectCountriesToCompare: "Karşılaştırılacak ülkeleri seçin"
+    selectCountriesToCompare: "Karşılaştırılacak ülkeleri seçin",
+    predict: "Tahminle"
+
   },
   az: {
     demoTitle: 'Deneme',
@@ -316,7 +321,9 @@ export default {
     chest: 'döş qəfəsinin tıxanması hissi',
     confusion: 'mialgiya və yorğunluq',
     lips: 'bədən hərarətinin yüksəlməsi',
-    selectCountriesToCompare: 'Müqayisə etmək üçün ölkələri seçin'
+    selectCountriesToCompare: 'Müqayisə etmək üçün ölkələri seçin',
+    predict: "Proqnozlaşdır"
+
   },
 
   ru: {
@@ -363,6 +370,8 @@ export default {
     Blood: 'Высокое кровяное давление',
     Cancer: 'рак',
     NoIllness: 'Без предварительных условий',
-    selectCountriesToCompare: 'Выберите страны для сравнения'
+    selectCountriesToCompare: 'Выберите страны для сравнения',
+    predict: "прогнозировать"
+
   },
 }

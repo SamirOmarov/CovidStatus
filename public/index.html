@@ -1,56 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>faviconV.png">
-    <link rel="stylesheet" type="text/css" href="<%= BASE_URL %>loader.css">
-    <title>CovidStatus - COVID-19 Novel Coronavirus Interactive Map, Coronavirus Live Update, Coronavirus Charts, Coronavirus Outbreak News </title>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="icon" href="<%= BASE_URL %>faviconV.png">
+  <link rel="stylesheet" type="text/css" href="<%= BASE_URL %>loader.css">
+  <title>CovidStatus - Coronavirus Outbreak News </title>
+  <meta name="description"
+        content="CovidStatus -  Coronavirus Interactive Map, Coronavirus Live Update, Coronavirus Charts, Coronavirus Outbreak News">
+  <meta name="keywords"
+        content="covid,covidstatus,CovidStatus,Covid Status,Covidstatus,coronavirus,covid-19,covid 19,covid status,Covid 19 status, Covid-19 status">
+  <meta name="web_author" content="Seymur Omarov,Samir Omarov">
+  <meta name="Robots" content="index, follow">
 
-  </head>
-  <body>
-    <noscript>
-      <strong>CovidStatus - COVID-19 Novel Coronavirus Interactive Map, Coronavirus Live Update, Coronavirus Charts, Coronavirus Outbreak News,</strong>
-    </noscript>
-    <div id="loading-bg">
-      <div class="loading-logo">
-        <img src="<%= BASE_URL %>logo.png" alt="Logo">
-      </div>
-      <div class="loading">
-        <div class="effect-1 effects"></div>
-        <div class="effect-2 effects"></div>
-        <div class="effect-3 effects"></div>
-      </div>
-    </div>
-    <div id="app">
+</head>
+<body>
+<noscript>
+  <strong>CovidStatus - COVID-19 Novel Coronavirus Interactive Map, Coronavirus Live Update, Coronavirus Charts,
+    Coronavirus Outbreak News,</strong>
+</noscript>
+<div id="loading-bg">
+  <div class="loading-logo">
+    <img src="<%= BASE_URL %>logo.png" alt="Logo">
+  </div>
+  <div class="loading">
+    <div class="effect-1 effects"></div>
+    <div class="effect-2 effects"></div>
+    <div class="effect-3 effects"></div>
+  </div>
+</div>
+<div id="app">
 
-    </div>
-    <h1 style="display: none">Covidstatus , Coronavirus status , corona timer , Covid Status, Covidstatus</h1>
-    <p style="display: none">Covidstatus , Coronavirus status , corona timer , Covid Status, Covidstatus , get local corona news</p>
-    <!-- built files will be auto injected -->
-  </body>
+</div>
+<h1 class="hide-me">Covidstatus , Coronavirus status , corona timer , Covid Status, Covidstatus</h1>
+<p class="hide-me">Covidstatus , Coronavirus status , corona timer , Covid Status, Covidstatus ,local corona
+  news</p>
+<!-- built files will be auto injected -->
+</body>
 
-  <style>
+<style>
 
-    @import url('https://fonts.googleapis.com/css?family=Cardo|Montserrat&display=swap');
-    @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
-    .title {
-      font-family: "Montserrat", sans-serif;
-      font-size: 36px;
-      letter-spacing: 8px;
-    }
+  @import url('https://fonts.googleapis.com/css?family=Cardo|Montserrat&display=swap');
+  @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
-    .data {
-      font-family: 'Roboto', sans-serif;
-      font-size: 18px;
-    }
-    .dataTitle {
-      font-family: 'Roboto', sans-serif;
-      font-size: 21px;
-    }
-    body {
-      font-family: 'Roboto', sans-serif;
-    }
+  .title {
+    font-family: "Montserrat", sans-serif;
+    font-size: 36px;
+    letter-spacing: 8px;
+  }
+
+  .hide-me {
+    display: none;
+  }
+
+  .data {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+  }
+
+  .dataTitle {
+    font-family: 'Roboto', sans-serif;
+    font-size: 21px;
+  }
+
+  body {
+    font-family: 'Roboto', sans-serif;
+  }
 </style>
 </html>
