@@ -136,7 +136,13 @@
           }
         });
         if (this.predict) {
-          let diff = countryData.confirmed[countryData.confirmed.length - 1] / countryData.confirmed[countryData.confirmed.length - 2]
+          let diff = null
+
+          if (countryData.confirmed[countryData.confirmed.length - 1] == response.data.confirmed) {
+            diff = countryData.confirmed[countryData.confirmed.length - 1] / countryData.confirmed[countryData.confirmed.length - 2]
+          } else {
+            diff = response.data.confirmed / countryData.confirmed[countryData.confirmed.length - 1]
+          }
           for (let i = 1; i <= 7; i++) {
             let date = countryData.dates[countryData.dates.length - 1]
             let someDate = new Date(date);
@@ -148,8 +154,8 @@
             let someFormattedDate = y + '-' + mm + '-' + dd;
             countryData.dates.push(someFormattedDate)
             countryDataByDay.dates.push(someFormattedDate)
-            countryData.confirmed.push(Math.floor(countryData.confirmed[countryData.confirmed.length - 1] * diff))
-            countryDataByDay.confirmed.push(Math.floor(countryData.confirmed[countryData.confirmed.length - 1] -countryData.confirmed[countryData.confirmed.length - 2]  ))
+            countryData.confirmed.push(Math.round(countryData.confirmed[countryData.confirmed.length - 1] * diff))
+            countryDataByDay.confirmed.push(Math.round(countryData.confirmed[countryData.confirmed.length - 1] - countryData.confirmed[countryData.confirmed.length - 2]))
           }
         }
         let datasets = [{
@@ -180,10 +186,18 @@
             }
           });
           if (this.predict) {
-            let diff = countryData[property][countryData[property].length - 1] / countryData[property][countryData[property].length - 2]
+            let diff = 1
+            console.log(countryData[property][countryData[property].length - 1])
+            console.log(this.selectedCountries[property].confirmed)
+            if (countryData[property][countryData[property].length - 1] == this.selectedCountries[property].confirmed) {
+              diff = countryData[property][countryData[property].length - 1] / countryData[property][countryData[property].length - 2]
+            } else {
+              diff = this.selectedCountries[property].confirmed / countryData[property][countryData[property].length - 1]
+            }
+
             for (let i = 1; i <= 7; i++) {
-              countryData[property].push(Math.floor(countryData[property][countryData[property].length - 1] * diff))
-              countryDataByDay[property].push(Math.floor(countryData[property][countryData[property].length - 1] - countryData[property][countryData[property].length - 2]))
+              countryData[property].push(Math.round(countryData[property][countryData[property].length - 1] * diff))
+              countryDataByDay[property].push(Math.round(countryData[property][countryData[property].length - 1] - countryData[property][countryData[property].length - 2]))
             }
           }
 
