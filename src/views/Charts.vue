@@ -7,13 +7,14 @@
         :placeholder="$t('selectCountriesToCompare')"
         class="selectExample mb-2"
         v-model="countrySelected"
+        max-selected="5"
         v-on:change="addNewCountry"
         width="300px"
       >
         <vs-select-item :key="index" :value="item.value" :text="item.text" v-for="(item,index) in countries"/>
       </vs-select>
       <vs-checkbox style="margin-left: 5px;margin-bottom: 10px" v-model="predict" v-on:change="prediction">
-        Predict
+        {{$t('predict')}}
       </vs-checkbox>
     </div>
     <div class="vx-row">
@@ -116,7 +117,6 @@
       },
       async initCharts() {
         let response = await axios.get("https://api.covidstatus.com/cases/" + this.country.code.toLowerCase(), {})
-        let ar = await axios.get("https://api.covidstatus.com/cases/ar", {})
         let from = Date.parse("2020-03-05");
 
         let countryData = {
@@ -140,7 +140,7 @@
           for (let i = 1; i <= 7; i++) {
             let date = countryData.dates[countryData.dates.length - 1]
             let someDate = new Date(date);
-            let numberOfDaysToAdd = 1; // add 6 days
+            let numberOfDaysToAdd = 1;
             someDate.setDate(someDate.getDate() + numberOfDaysToAdd);
             let dd = someDate.getDate();
             let mm = someDate.getMonth() + 1;
@@ -149,7 +149,7 @@
             countryData.dates.push(someFormattedDate)
             countryDataByDay.dates.push(someFormattedDate)
             countryData.confirmed.push(Math.floor(countryData.confirmed[countryData.confirmed.length - 1] * diff))
-            countryDataByDay.confirmed.push(Math.floor(countryDataByDay.confirmed[countryDataByDay.confirmed.length - 1] * diff))
+            countryDataByDay.confirmed.push(Math.floor(countryData.confirmed[countryData.confirmed.length - 1] -countryData.confirmed[countryData.confirmed.length - 2]  ))
           }
         }
         let datasets = [{
@@ -183,7 +183,7 @@
             let diff = countryData[property][countryData[property].length - 1] / countryData[property][countryData[property].length - 2]
             for (let i = 1; i <= 7; i++) {
               countryData[property].push(Math.floor(countryData[property][countryData[property].length - 1] * diff))
-              countryDataByDay[property].push(Math.floor(countryDataByDay[property][countryDataByDay[property].length - 1] * diff))
+              countryDataByDay[property].push(Math.floor(countryData[property][countryData[property].length - 1] - countryData[property][countryData[property].length - 2]))
             }
           }
 

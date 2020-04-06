@@ -24,7 +24,16 @@
         />
       </div>
 
-
+      <div class="vx-col w-full vx-col w-1/2 md:w-1/3 xl:w-1/6">
+        <statistics-card-line
+          hideChart
+          class="mb-base"
+          icon="SmileIcon"
+          :statisticTitle="$t('Recovered')"
+          :statistic="info.cured"
+          color="success"
+        />
+      </div>
       <div class="vx-col w-full vx-col w-1/2 md:w-1/3 xl:w-1/6">
         <statistics-card-line
           hideChart
@@ -58,16 +67,7 @@
         />
       </div>
 
-      <div class="vx-col w-full vx-col w-1/2 md:w-1/3 xl:w-1/6">
-        <statistics-card-line
-          hideChart
-          class="mb-base"
-          icon="SmileIcon"
-          :statisticTitle="$t('Recovered')"
-          :statistic="info.cured"
-          color="success"
-        />
-      </div>
+
       <div class="vx-col w-full vx-col w-1/2 md:w-1/3 xl:w-1/6">
         <statistics-card-line
           hideChart

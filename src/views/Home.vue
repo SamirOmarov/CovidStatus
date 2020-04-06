@@ -11,13 +11,46 @@
     </div>
 
 
-    <a class="Kofi" href='https://ko-fi.com/A0A21J5UF' target='_blank'><img height='36' style='border:0px;height:36px;'
-                                                                            src='https://az743702.vo.msecnd.net/cdn/kofi5.png?v=2'
-                                                                            border='0'
-                                                                            alt='Buy Me a Coffee at ko-fi.com'/></a>
+<!--    <a class="Kofi" href='https://ko-fi.com/A0A21J5UF' target='_blank'><img height='36' style='border:0px;height:36px;'-->
+<!--                                                                            src='https://az743702.vo.msecnd.net/cdn/kofi5.png?v=2'-->
+<!--                                                                            border='0'-->
+<!--                                                                            alt='Buy Me a Coffee at ko-fi.com'/></a>-->
     <h2 class="mb-5 title">{{ $t('YourCountry')}} {{ ip.name}}</h2>
 
     <div class="vx-row">
+      <div class="vx-col w-1/2 md:w-1/3 xl:w-1/6">
+        <statistics-card-line
+          hideChart
+          class="mb-base"
+          icon="UsersIcon"
+          :statistic="info.confirmed"
+          :statisticTitle="$t('TotalInfected')"
+        />
+      </div>
+
+      <div class="vx-col w-1/2 md:w-1/3 xl:w-1/6">
+        <statistics-card-line
+          hideChart
+          class="mb-base"
+          icon="SmileIcon"
+          :statisticTitle="$t('Recovered')"
+          :statistic="info.cured"
+          color="success"
+        />
+      </div>
+
+
+      <div class="vx-col w-1/2 md:w-1/3 xl:w-1/6">
+        <statistics-card-line
+          hideChart
+          class="mb-base"
+          icon="UserXIcon"
+          :statistic="info.death"
+          :statisticTitle="$t('Deaths')"
+          color="danger"
+        />
+      </div>
+
       <div class="vx-col w-1/2 md:w-1/3 xl:w-1/6">
         <statistics-card-line
           hideChart
@@ -50,27 +83,8 @@
       <!--        />-->
       <!--      </div>-->
 
-      <div class="vx-col w-1/2 md:w-1/3 xl:w-1/6">
-        <statistics-card-line
-          hideChart
-          class="mb-base"
-          icon="SmileIcon"
-          :statisticTitle="$t('Recovered')"
-          :statistic="info.cured"
-          color="success"
-        />
-      </div>
 
-      <div class="vx-col w-1/2 md:w-1/3 xl:w-1/6">
-        <statistics-card-line
-          hideChart
-          class="mb-base"
-          icon="UserXIcon"
-          :statistic="info.death"
-          :statisticTitle="$t('Deaths')"
-          color="danger"
-        />
-      </div>
+
 
       <div class="vx-col w-1/2 md:w-1/3 xl:w-1/6">
         <statistics-card-line
@@ -83,16 +97,7 @@
         />
       </div>
 
-      <div class="vx-col w-1/2 md:w-1/3 xl:w-1/6">
-        <statistics-card-line
-          hideChart
-          class="mb-base"
-          icon="InfoIcon"
-          :statistic="info.confirmed"
-          :statisticTitle="$t('TotalInfected')"
-          color="warning"
-        />
-      </div>
+
 
       <!--      <div class="vx-col w-1/2 md:w-1/3 xl:w-1/6">-->
       <!--        <statistics-card-line-->
