@@ -29,20 +29,11 @@ export default {
     options: {
       title: {
         display: true,
-        text: "N = 44,672"
-      }
+        text: "N = 44,672",
+      },
+      maintainAspectRatio: false,
     }
   }),
-  // created() {
-  //   this.chartdata.labels = [
-  //     this.$t("Cardiovascular"),
-  //     this.$t("Diabetes"),
-  //     this.$t("Chronic"),
-  //     this.$t("Blood"),
-  //     this.$t("Cancer"),
-  //     this.$t("NoIllness")
-  //   ];
-  // }
 }
 
 </script>

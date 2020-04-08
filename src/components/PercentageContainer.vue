@@ -29,7 +29,9 @@
         title: {
           display: true,
           text: "08.04.2020"
-        }
+        },
+        maintainAspectRatio: false,
+
       }
     }),
     created() {
