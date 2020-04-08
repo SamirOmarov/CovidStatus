@@ -91,15 +91,12 @@
         });
       },
       prediction() {
-        console.log(this.predict)
         this.initCharts()
 
       },
       async addNewCountry(codes) {
-        console.log(codes)
         this.selectedCountries = []
         for (let code in codes) {
-          console.log(codes[code])
           let country = await axios.get("https://api.covidstatus.com/cases/" + codes[code].toLowerCase(), {})
           this.selectedCountries[codes[code]] = country.data
         }
@@ -139,9 +136,9 @@
           let diff = null
 
           if (countryData.confirmed[countryData.confirmed.length - 1] == response.data.confirmed) {
-            diff = countryData.confirmed[countryData.confirmed.length - 1] / countryData.confirmed[countryData.confirmed.length - 2]
+            diff = countryDataByDay.confirmed[countryDataByDay.confirmed.length - 1] / countryDataByDay.confirmed[countryDataByDay.confirmed.length - 2]
           } else {
-            diff = response.data.confirmed / countryData.confirmed[countryData.confirmed.length - 1]
+            diff = response.data.new_confirmed / countryDataByDay.confirmed[countryDataByDay.confirmed.length - 1]
           }
           for (let i = 1; i <= 7; i++) {
             let date = countryData.dates[countryData.dates.length - 1]
@@ -154,8 +151,8 @@
             let someFormattedDate = y + '-' + mm + '-' + dd;
             countryData.dates.push(someFormattedDate)
             countryDataByDay.dates.push(someFormattedDate)
-            countryData.confirmed.push(Math.round(countryData.confirmed[countryData.confirmed.length - 1] * diff))
-            countryDataByDay.confirmed.push(Math.round(countryData.confirmed[countryData.confirmed.length - 1] - countryData.confirmed[countryData.confirmed.length - 2]))
+            countryDataByDay.confirmed.push(Math.round(countryDataByDay.confirmed[countryDataByDay.confirmed.length - 1] * diff))
+            countryData.confirmed.push(Math.round(countryData.confirmed[countryData.confirmed.length - 1] + countryDataByDay.confirmed[countryDataByDay.confirmed.length - 1]))
           }
         }
         let datasets = [{
@@ -187,17 +184,16 @@
           });
           if (this.predict) {
             let diff = 1
-            console.log(countryData[property][countryData[property].length - 1])
-            console.log(this.selectedCountries[property].confirmed)
-            if (countryData[property][countryData[property].length - 1] == this.selectedCountries[property].confirmed) {
-              diff = countryData[property][countryData[property].length - 1] / countryData[property][countryData[property].length - 2]
+            if (countryData[property][countryData[property].length - 1] == this.selectedCountries[property].new_confirmed) {
+              diff = countryDataByDay[property][countryDataByDay[property].length - 1] / countryDataByDay[property][countryDataByDay[property].length - 2]
             } else {
-              diff = this.selectedCountries[property].confirmed / countryData[property][countryData[property].length - 1]
+              diff = this.selectedCountries[property].new_confirmed / countryDataByDay[property][countryDataByDay[property].length - 1]
             }
 
+
             for (let i = 1; i <= 7; i++) {
-              countryData[property].push(Math.round(countryData[property][countryData[property].length - 1] * diff))
-              countryDataByDay[property].push(Math.round(countryData[property][countryData[property].length - 1] - countryData[property][countryData[property].length - 2]))
+              countryDataByDay[property].push(Math.round(countryDataByDay[property][countryData[property].length - 1] * diff))
+              countryData[property].push(Math.round(countryData[property][countryData[property].length - 1] + countryDataByDay[property][countryDataByDay[property].length - 1]))
             }
           }
 
