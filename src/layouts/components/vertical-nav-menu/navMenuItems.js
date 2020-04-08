@@ -4,9 +4,6 @@
   ----------------------------------------------------------------------------------------
 
 ==========================================================================================*/
-
-
-
 //
 export default [
   {
@@ -45,12 +42,13 @@ export default [
     slug: "protection",
     icon: "CheckSquareIcon",
   },
+  {
+    url: "/myth",
+    name: "myth",
+    slug: "myth",
+    icon: "DatabaseIcon",
+  },
   // {
-  //   url: "/page4",
-  //   name: "ForNerds",
-  //   slug: "page4",
-  //   icon: "DatabaseIcon",
-  // },{
   //   url: "/page4",
   //   name: "Wiki",
   //   slug: "page4",

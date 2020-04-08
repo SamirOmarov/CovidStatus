@@ -58,6 +58,11 @@ const router = new Router({
                 name: 'map',
                 component: () => import('./views/Map.vue')
               },
+              {
+                path: '/myth',
+                name: 'myth',
+                component: () => import('./views/Myth.vue')
+              },
             ],
         },
     // =============================================================================

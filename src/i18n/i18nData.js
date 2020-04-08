@@ -88,7 +88,52 @@ export default {
     confusion: 'New confusion or inability to arouse',
     lips: 'Bluish lips or face',
     selectCountriesToCompare: "Select countries to compare",
-    predict: "Predict"
+    predict: "Predict",
+
+    Myth: 'Myths & Misconceptions',
+    // cure
+    antibiotics: 'Take antibiotics!',
+    antibioticsRes: 'Nope. Antibiotics only work against bacteria, not viruses.',
+    steroids: 'Steroids!',
+    steroidsRes: 'They do not work against coronavirus.',
+    sprayAlcohol: 'Spray alcohol/chlorine on yourself',
+    sprayAlcoholRes: 'Will not kill viruses already in the body, and may be harmful.',
+    ibuprofen: 'Taking ibuprofen is a bad idea',
+    ibuprofenRes: 'Theoretical possibility that ibuprofen could increase the number of receptors the coronvirus uses to infect cells. As yet there is no data to back this up.',
+    // prevention
+    hotBath: 'Just take a hot bath',
+    hotBathRes: 'A hot bath will not stop you catching it, and it will not change your body temperature.',
+    pneumoniaVaccines: 'Pneumonia vaccines',
+    pneumoniaVaccinesRes: 'Do not work against this coronavirus, which needs a vaccine of its own.',
+    eatGarlic: 'Eat loads of garlic!',
+    eatGarlicRes: 'Garlic has antimicrobial properties, but there is no evidence it can protect you from coronavirus.',
+    waterNose: 'Salt-water nose rinses',
+    waterNoseRes: 'There is limited evidence that saline washes can speed up recovery from common cold. But zero evidence that they prevent coronavirus infection.',
+    vaccineComing: 'A vaccine is coming soon!',
+    vaccineComingRes: 'Scientists around the globe are working on it, but it will not be ready for months.',
+    //spread
+    coldWeather:'Cold weather kills it',
+    coldWeatherRes: 'No evidence that cold weather kills coronavirus. The body remains warm whatever the weather anyway.',
+    hotWeather: 'How eather kills it',
+    hotWeatherRes: 'Unclear. The virus has been transmitted in areas with hot weather.',
+    petSpread: 'Pets can spread the coronavirus',
+    petSpreadRes: 'No evidence that COVID-19 can be transmitted from pets to humans.',
+    chloroquinePrevent: 'Chloroquine drugs can prevent the virus spreading',
+    chloroquinePreventRes: 'Currently used for lupus/arthritis/malaria. Some evidence that these drugs might inhibit the virus, but we don not know for sure yet. Major trials are starting.',
+    // diagnosis
+    holdBreath:'Hold your breath for 10 seconds',
+    holdBreathRes: '"If you can not, you have got COVID". Fake rumour put out online. This is not a way to detect the disease.',
+    infectionAgain: 'People who recover can get it again',
+    infectionAgainRes: 'We do not know for sure yet, but reinfection is highly unlikely.'
+    
+
+
+
+
+
+
+
+
 
   },
   de: {
