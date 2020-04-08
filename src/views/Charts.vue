@@ -263,10 +263,10 @@
                 beginAtZero: true,
               },
               display: true,
-              scaleLabel: {
-                display: true,
-                labelString: this.$t('TotalInfected'),
-              }
+              // scaleLabel: {
+              //   display: true,
+              //   labelString: this.$t('TotalInfected'),
+              // }
             }]
           }
         }

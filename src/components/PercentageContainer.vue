@@ -28,7 +28,7 @@
       options: {
         title: {
           display: true,
-          text: "13:03:2020"
+          text: "08.04.2020"
         }
       }
     }),
