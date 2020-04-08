@@ -90,7 +90,7 @@ export default {
     selectCountriesToCompare: "Select countries to compare",
     predict: "Predict",
 
-    Myth: 'Myths & Misconceptions',
+    myth: 'Myths & Misconceptions',
     // cure
     antibiotics: 'Take antibiotics!',
     antibioticsRes: 'Nope. Antibiotics only work against bacteria, not viruses.',
@@ -112,20 +112,20 @@ export default {
     vaccineComing: 'A vaccine is coming soon!',
     vaccineComingRes: 'Scientists around the globe are working on it, but it will not be ready for months.',
     //spread
-    coldWeather:'Cold weather kills it',
+    coldWeather: 'Cold weather kills it',
     coldWeatherRes: 'No evidence that cold weather kills coronavirus. The body remains warm whatever the weather anyway.',
-    hotWeather: 'How eather kills it',
+    hotWeather: 'Hot weather kills it',
     hotWeatherRes: 'Unclear. The virus has been transmitted in areas with hot weather.',
     petSpread: 'Pets can spread the coronavirus',
     petSpreadRes: 'No evidence that COVID-19 can be transmitted from pets to humans.',
     chloroquinePrevent: 'Chloroquine drugs can prevent the virus spreading',
     chloroquinePreventRes: 'Currently used for lupus/arthritis/malaria. Some evidence that these drugs might inhibit the virus, but we don not know for sure yet. Major trials are starting.',
     // diagnosis
-    holdBreath:'Hold your breath for 10 seconds',
+    holdBreath: 'Hold your breath for 10 seconds',
     holdBreathRes: '"If you can not, you have got COVID". Fake rumour put out online. This is not a way to detect the disease.',
     infectionAgain: 'People who recover can get it again',
     infectionAgainRes: 'We do not know for sure yet, but reinfection is highly unlikely.'
-    
+
 
 
 
@@ -277,7 +277,45 @@ export default {
     confusion: 'zatürre',
     lips: 'Mavimsi dudaklar veya yüz',
     selectCountriesToCompare: "Karşılaştırılacak ülkeleri seçin",
-    predict: "Tahminle"
+    predict: "Tahminle",
+
+    myth: 'Mitler ve Yanılgılar',
+    // cure
+    antibiotics: 'Antibiyotik al!',
+    antibioticsRes: 'Hayır! Antibiyotikler virüslere karşı değil, sadece bakterilere karşı çalışır.',
+    steroids: 'Steroidler!',
+    steroidsRes: 'Koronavirüse karşı çalışmazlar.',
+    sprayAlcohol: 'Kendinize alkol / klor püskürtün',
+    sprayAlcoholRes: 'Zaten vücuttaki virüsleri öldürmez ve zararlı olabilir.',
+    ibuprofen: 'İbuprofen almak kötü bir fikirdir',
+    ibuprofenRes: 'İbuprofenin, koronvirüsün hücreleri enfekte etmek için kullandığı reseptör sayısını artırabileceği teorik olasılığı var. Henüz bunu destekleyecek veri yok.',
+    // prevention
+    hotBath: 'Sadece sıcak bir banyo yap',
+    hotBathRes: 'Sıcak bir banyo onu yakalamanızı durdurmaz ve vücut sıcaklığınızı değiştirmez.',
+    pneumoniaVaccines: 'Zatürree aşıları',
+    pneumoniaVaccinesRes: 'Kendi başına bir aşıya ihtiyaç duyan bu koronavirüse karşı etki etmez.',
+    eatGarlic: 'Bir sürü sarımsak yiyin!',
+    eatGarlicRes: 'Sarımsak antimikrobiyal özelliklere sahiptir, ancak sizi koronavirüsten koruyabileceğine dair bir kanıt yoktur.',
+    waterNose: 'Tuzlu su ile burun durulamaları',
+    waterNoseRes: 'Tuzlu su yıkamalarının soğuk algınlığından iyileşmeyi hızlandırabileceğine dair sınırlı kanıt vardır. Ancak koronavirüs enfeksiyonunu önlediklerini gösteren sıfır kanıt bulunmaktadır.',
+    vaccineComing: 'Yakında bir aşı geliyor!',
+    vaccineComingRes: 'Dünyanın dört bir yanındaki bilim adamları bunun üzerinde çalışıyor, ancak aylarca hazır olmayacak.',
+    //spread
+    coldWeather: 'Soğuk hava onu öldürür',
+    coldWeatherRes: 'Soğuk havanın koronavirüsü öldürdüğüne dair bir kanıt yok. Hava nasıl olursa olsun vücut sıcak kalır.',
+    hotWeather: 'Sıcak hava onu öldürür',
+    hotWeatherRes: 'Belirsiz. Virüs sıcak havaların olduğu bölgelerde bulaşmıştır.',
+    petSpread: 'Evcil hayvanlar koronavirüsü yayabilir',
+    petSpreadRes: 'COVID-19 un evcil hayvanlardan insanlara bulaşabileceğine dair hiçbir kanıt yoktur.',
+    chloroquinePrevent: 'Klorokin ilaçları virüsün yayılmasını önleyebilir',
+    chloroquinePreventRes: 'Şu anda lupus / artrit / sıtma için kullanılmaktadır. Bu ilaçların virüsü inhibe edebileceğine dair bazı kanıtlar var, ancak henüz kesin olarak bilmiyoruz. Büyük denemeler başlıyor.',
+    // diagnosis
+    holdBreath: 'Nefesini 10 saniye tut',
+    holdBreathRes: '"Yapamazsan COVID in var". Sahte bir bilgidir. Bu hastalığı tespit etmenin bir yolu değildir.',
+    infectionAgain: 'İyileşen insanlar tekrar enfekte olabilir',
+    infectionAgainRes: 'Henüz kesin olarak bilmiyoruz, ancak yeniden bulaşma olasılığı düşüktür.',
+
+
 
   },
   az: {
@@ -367,7 +405,43 @@ export default {
     confusion: 'mialgiya və yorğunluq',
     lips: 'bədən hərarətinin yüksəlməsi',
     selectCountriesToCompare: 'Müqayisə etmək üçün ölkələri seçin',
-    predict: "Proqnozlaşdır"
+    predict: "Proqnozlaşdır",
+
+    myth: ' Miflər və səhv anlayışlar ',
+    // cure
+    antibiotics: 'Antibiotik qəbul edin!',
+    antibioticsRes: 'Xeyr. Antibiotiklər yalnız bakteriyalara qarşı işləyir.',
+    steroids: 'Steroidlər!',
+    steroidsRes: 'Koronavirusa qarşı işləmirlər.',
+    sprayAlcohol: 'Özünüzə spirt / xlor sprey edin',
+    sprayAlcoholRes: 'Artıq bədəndə olan virusları öldürməyəcək və hətta zərərli ola bilər.',
+    ibuprofen: 'İbuprofen qəbul etmək pis bir fikirdir',
+    ibuprofenRes: 'İbuprofenin korona virusunun hüceyrələri yoluxdurmaq üçün istifadə etdiyi reseptorların sayını artıra biləcəyi nəzəri ehtimalı var amma hələ ki, bu barədə məlumat yoxdur.',
+    // prevention
+    hotBath: 'İsti vanna qəbul edin',
+    hotBathRes: 'İsti bir vanna koronavirusu tutmağı dayandırmır və bədən istiliyini dəyişdirmir.',
+    pneumoniaVaccines: 'Sətəlcəm peyvəndi',
+    pneumoniaVaccinesRes: 'Öz peyvəndinə ehtiyacı olan bu koronavirusa qarşı işləmir.',
+    eatGarlic: 'Çoxlu sarımsaq yeyin!',
+    eatGarlicRes: 'Sarımsağın antimikrobiyal xüsusiyyətləri var, ancaq sizi koronavirusdan qoruya biləcək bir dəlil yoxdur.',
+    waterNose: 'Duzlu( Dəniz) suyu ilə burun yumaq',
+    waterNoseRes: 'Duzlu( Dəniz) suyu ilə burun yumağın  ümumi soyuq dəymədə yaxşılaşmanı sürətləndirə biləcəyinə dair məhdud sübutlar var. Lakin  koronavirus infeksiyasının qarşısını aldığına dair dəlil yoxdur.',
+    vaccineComing: 'Tezliklə bir peyvənd gəlir!',
+    vaccineComingRes: 'Dünyadakı elm adamları bunun üzərində işləyirlər, ancaq aylarla hazır olmayacaq.',
+    //spread
+    coldWeather: 'Soyuq hava onu öldürür',
+    coldWeatherRes: 'Soyuq havanın koronavirusu öldürdüyünə dair heç bir dəlil yoxdur. Bədən hər halda isti qalır.',
+    hotWeather: 'İsti hava onu öldürür',
+    hotWeatherRes: 'Aydın deyil. Virus isti havaları olan bölgələrdə ötürülüb.',
+    petSpread: 'Ev heyvanları koronavirusu yaya bilər',
+    petSpreadRes: 'COVID-19-un ev heyvanlarından insanlara keçə biləcəyinə dair heç bir dəlil yoxdur.',
+    chloroquinePrevent: 'Xlorokin dərmanları virusun yayılmasının qarşısını ala bilər',
+    chloroquinePreventRes: 'Hal-hazırda lupus / artrit / malyariya üçün istifadə olunur. Bu dərmanların virusu inhibə edə biləcəyinə dair bəzi sübutlar var, amma hələ dəqiq bilmirik. Böyük sınaqlar başlayır.',
+    // diagnosis
+    holdBreath: 'Nəfəsinizi 10 saniyə saxlayın',
+    holdBreathRes: '"Əgər edə bilmirsinizsə, COVİD var". İnternetdə olan saxta şayiələrdir. Bu xəstəliyi aşkar etmək üçün doğru bir yol deyil.',
+    infectionAgain: 'Sağalmış insanlar yenidən yoluxa bilərlər',
+    infectionAgainRes: 'Hələlik dəqiq bilmirik, amma təkrar infeksiya ehtimalı azdır.'
 
   },
 
@@ -416,7 +490,43 @@ export default {
     Cancer: 'рак',
     NoIllness: 'Без предварительных условий',
     selectCountriesToCompare: 'Выберите страны для сравнения',
-    predict: "прогнозировать"
+    predict: "прогнозировать",
+
+    myth: 'Myths & Misconceptions',
+    // cure
+    antibiotics: 'Take antibiotics!',
+    antibioticsRes: 'Nope. Antibiotics only work against bacteria, not viruses.',
+    steroids: 'Steroids!',
+    steroidsRes: 'They do not work against coronavirus.',
+    sprayAlcohol: 'Spray alcohol/chlorine on yourself',
+    sprayAlcoholRes: 'Will not kill viruses already in the body, and may be harmful.',
+    ibuprofen: 'Taking ibuprofen is a bad idea',
+    ibuprofenRes: 'Theoretical possibility that ibuprofen could increase the number of receptors the coronvirus uses to infect cells. As yet there is no data to back this up.',
+    // prevention
+    hotBath: 'Just take a hot bath',
+    hotBathRes: 'A hot bath will not stop you catching it, and it will not change your body temperature.',
+    pneumoniaVaccines: 'Pneumonia vaccines',
+    pneumoniaVaccinesRes: 'Do not work against this coronavirus, which needs a vaccine of its own.',
+    eatGarlic: 'Eat loads of garlic!',
+    eatGarlicRes: 'Garlic has antimicrobial properties, but there is no evidence it can protect you from coronavirus.',
+    waterNose: 'Salt-water nose rinses',
+    waterNoseRes: 'There is limited evidence that saline washes can speed up recovery from common cold. But zero evidence that they prevent coronavirus infection.',
+    vaccineComing: 'A vaccine is coming soon!',
+    vaccineComingRes: 'Scientists around the globe are working on it, but it will not be ready for months.',
+    //spread
+    coldWeather: 'Cold weather kills it',
+    coldWeatherRes: 'No evidence that cold weather kills coronavirus. The body remains warm whatever the weather anyway.',
+    hotWeather: 'How eather kills it',
+    hotWeatherRes: 'Unclear. The virus has been transmitted in areas with hot weather.',
+    petSpread: 'Pets can spread the coronavirus',
+    petSpreadRes: 'No evidence that COVID-19 can be transmitted from pets to humans.',
+    chloroquinePrevent: 'Chloroquine drugs can prevent the virus spreading',
+    chloroquinePreventRes: 'Currently used for lupus/arthritis/malaria. Some evidence that these drugs might inhibit the virus, but we don not know for sure yet. Major trials are starting.',
+    // diagnosis
+    holdBreath: 'Hold your breath for 10 seconds',
+    holdBreathRes: '"If you can not, you have got COVID". Fake rumour put out online. This is not a way to detect the disease.',
+    infectionAgain: 'People who recover can get it again',
+    infectionAgainRes: 'We do not know for sure yet, but reinfection is highly unlikely.'
 
   },
 }
