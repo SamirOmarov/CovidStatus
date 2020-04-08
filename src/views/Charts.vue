@@ -28,6 +28,30 @@
           <canvas id="confirmedChartByDay"></canvas>
         </vx-card>
       </div>
+      <div class="md:w-1/2 w-full mb-base vx-col">
+        <vx-card :title="$t('Symptoms')">
+          <symptoms />
+        </vx-card>
+      </div>
+
+      <div class="md:w-1/2 w-full mb-base vx-col">
+        <vx-card :title="$t('WorldWidePercentage')">
+          <percentage />
+        </vx-card>
+      </div>
+
+      <div class="md:w-1/2 w-full mb-base vx-col">
+        <vx-card :title="$t('Preconditions')">
+          <risk />
+        </vx-card>
+      </div>
+
+      <div class="md:w-1/2 w-full mb-base vx-col">
+        <vx-card :title="$t('RiskGroup')">
+          <illness />
+        </vx-card>
+      </div>
+
     </div>
   </div>
 </template>

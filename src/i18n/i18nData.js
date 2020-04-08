@@ -252,7 +252,7 @@ export default {
     NewDeath: "Yeni ölümlər",
     Serious: 'Kritik vəziyyət',
     LineChart: 'Covid-19 Sahə Qrafiki',
-    Symptoms: 'Semptomların şiddəti %',
+    Symptoms: 'Simptomların şiddəti %',
     WorldWidePercentage: 'Dünyadakı faiz statusu',
     RiskGroup: 'Yaş üzrə risk qrupları',
     Preconditions: 'Ön şərtlərə görə risk qrupları',
