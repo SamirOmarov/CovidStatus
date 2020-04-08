@@ -13,9 +13,9 @@
       >
         <vs-select-item :key="index" :value="item.value" :text="item.text" v-for="(item,index) in countries"/>
       </vs-select>
-      <vs-checkbox style="margin-left: 5px;margin-bottom: 10px" v-model="predict" v-on:change="prediction">
-        {{$t('predict')}}
-      </vs-checkbox>
+<!--      <vs-checkbox style="margin-left: 5px;margin-bottom: 10px" v-model="predict" v-on:change="prediction">-->
+<!--        {{$t('predict')}}-->
+<!--      </vs-checkbox>-->
     </div>
     <div class="vx-row">
       <div class="md:w-1/2 w-full mb-base vx-col">
@@ -184,7 +184,7 @@
           });
           if (this.predict) {
             let diff = 1
-            if (countryData[property][countryData[property].length - 1] == this.selectedCountries[property].new_confirmed) {
+            if (countryData[property][countryData[property].length - 1] == this.selectedCountries[property].confirmed) {
               diff = countryDataByDay[property][countryDataByDay[property].length - 1] / countryDataByDay[property][countryDataByDay[property].length - 2]
             } else {
               diff = this.selectedCountries[property].new_confirmed / countryDataByDay[property][countryDataByDay[property].length - 1]
