@@ -124,9 +124,9 @@ export default {
     holdBreath: 'Hold your breath for 10 seconds',
     holdBreathRes: '"If you can not, you have got COVID". Fake rumour put out online. This is not a way to detect the disease.',
     infectionAgain: 'People who recover can get it again',
-    infectionAgainRes: 'We do not know for sure yet, but reinfection is highly unlikely.'
+    infectionAgainRes: 'We do not know for sure yet, but reinfection is highly unlikely.',
 
-
+    source: 'Source',
 
 
 
@@ -315,6 +315,7 @@ export default {
     infectionAgain: 'İyileşen insanlar tekrar enfekte olabilir',
     infectionAgainRes: 'Henüz kesin olarak bilmiyoruz, ancak yeniden bulaşma olasılığı düşüktür.',
 
+    source: 'Kaynak',
 
 
   },
@@ -441,7 +442,9 @@ export default {
     holdBreath: 'Nəfəsinizi 10 saniyə saxlayın',
     holdBreathRes: '"Əgər edə bilmirsinizsə, COVİD var". İnternetdə olan saxta şayiələrdir. Bu xəstəliyi aşkar etmək üçün doğru bir yol deyil.',
     infectionAgain: 'Sağalmış insanlar yenidən yoluxa bilərlər',
-    infectionAgainRes: 'Hələlik dəqiq bilmirik, amma təkrar infeksiya ehtimalı azdır.'
+    infectionAgainRes: 'Hələlik dəqiq bilmirik, amma təkrar infeksiya ehtimalı azdır.',
+    
+    source: 'Mənbə',
 
   },
 
