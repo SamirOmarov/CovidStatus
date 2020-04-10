@@ -128,7 +128,7 @@
         map: [],
         ip: [],
 
-        mapData: [["Country", "Confirmed"]],
+        mapData: [["Code", "Country", "Confirmed"]],
         mapOptionsDark: {
           colorAxis: {
             values: [9, 99, 999, 9999, 1e4, 1e5],
@@ -162,7 +162,7 @@
         this.map = response.data;
         response.data.forEach(element => {
           if (element.confirmed != 0)
-            self.mapData.push([element.country_name, element.confirmed]);
+            self.mapData.push([element.country_code, element.country_name, element.confirmed]);
         });
       });
     },
