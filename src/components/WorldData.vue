@@ -82,14 +82,14 @@
 
     <GChart
       type="GeoChart"
-      v-if="themeMode=='dark'"
+      v-if="themeMode=='dark' && loading"
       :settings="{packages: ['geochart'], mapsApiKey: myMapsApiKey}"
       :data="mapData"
       :options="mapOptionsDark"
     />
     <GChart
       type="GeoChart"
-      v-if="themeMode=='light'"
+      v-if="themeMode=='light' && loading"
       :settings="{packages: ['geochart'], mapsApiKey: myMapsApiKey}"
       :data="mapData"
       :options="mapOptionLight"
@@ -125,6 +125,7 @@
           death: 0,
           serious: 0
         },
+        loading: false,
         map: [],
         ip: [],
 
@@ -164,6 +165,7 @@
           if (element.confirmed != 0)
             self.mapData.push([element.country_code, element.country_name, element.confirmed]);
         });
+        self.loading = true
       });
     },
 
